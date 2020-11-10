@@ -1,0 +1,98 @@
+lignes sncf:
+  ligne:
+    guid ligne:
+    code ligne:
+      liste des srv:
+        srv:
+          date début d'application:
+          date fin d'application:
+          nom de la voie:
+          nom long de la voie:
+          nom local:
+            guid habillage:
+            pk début:
+            pk fin:
+          pk début srv:
+          pk fin srv:
+          liste pr horairisés:
+            pr:
+              libellé ci:
+              libellé long du ch:
+              code ci:
+              code ch:
+              pk:
+              indicateur particulier:
+          liste tiv:
+            tiv:
+              tiv connectés début:
+                guid:
+                  nom voie associée au tiv:
+                  nom voie locale:
+              tiv connectés fin:
+                guid:
+                  nom voie associée au tiv:
+                  nom voie locale:
+              pk début:
+              type nœud extrémité début:
+                guid:
+                libellé nœud début:
+                mnemo:
+              pk fin:
+              type nœud extrémité fin:
+                guid:
+                libellé nœud fin:
+                mnemo:
+              liste signaux du tiv:
+                signal:
+                  libellé:
+                  libellé du type du signal:
+                  libellé poste d'aiguillage:
+                    libellé gare associée au poste:
+                  pk:
+              liste cdv:
+                cdv:
+                  libellé:
+                  libellé poste d'aiguillage:
+                  extremités:
+                    type:
+                    libellé:
+                    nom voie:
+                    libellé poste d'aiguillage:
+                    pk:
+          liste localisateurs:
+            localisateur:
+              pk:
+              sens de mesure possible:
+      liste des srl:
+        srl:
+          date début d'application:
+          date fin d'application:
+          pk début srl:
+          pk fin srl:
+          liste pr:
+            pr:
+              libellé ci:
+              libellé long du ch:
+              code ci:
+              code ch:
+              pk:
+              indicateur particulier:
+          liste localisateurs:
+            localisateur:
+              pk:
+              sens de mesure possible:
+              numéro de localisateur:
+              nom de la voie:
+              matériel émetteur:
+              matériel origine:
+              libellé construit:
+              num fenêtre:
+              pr:
+    liste itinéraires:
+      itinéraire:
+        libellé:
+        liste tiv:
+          tiv:
+        guid du poste d'aiguillage:
+        libellé poste d'aiguillage:
+        srv début:
