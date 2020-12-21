@@ -2,6 +2,8 @@ import yaml
 import json
 import ruamel.yaml
 import sys
+import re
+
 print (sys.stdout.encoding)
 
 max_lenght_col = 100 
@@ -24,7 +26,11 @@ def traitement_string(str):
     #s = s.replace('é' , 'e')
     #s = s.replace('è' , 'e')
     s = s.rstrip()
-    s = s.lower()
+    s = s.lower()	
+    #temp = re.match('\s+|\s+$' , s) 
+    #s = s.replace(' ' , '_')
+    #s = temp + s
+    print(f"{s}")
     if(len(s) < max_lenght_col):
 	    return  add_char_to_str(s , " " , max_lenght_col)
     else: 
